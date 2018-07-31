@@ -33,10 +33,10 @@ Alternatively, an exploratory analysis can be packaged in an interactive Shiny a
 
 ## App Features
 
-An example exploratory analysis, packaged as a Shiny app, can be accessed [here]().
+An example exploratory analysis, packaged as a Shiny app, can be accessed [here](https://cclaypool.shinyapps.io/dataexplorer/).
 
 - Tab 1: Data Overview
-    - Shows a table of up to 100 observations from the dataset. The user can select how many to display and which variable to order the dataset by.
+    - Shows a table of up to 100 observations from the dataset. The user can select how many observations to display and which variable to order the dataset by.
 - Tab 2: Exploratory Graphs
     - Allows the user to create a variety of exploratory graphs, including scatter plots, box plots and histograms
     - Users can select which variables to show on the axes and whether to show further variables using color or faceting, and tune graphical options
@@ -44,5 +44,5 @@ An example exploratory analysis, packaged as a Shiny app, can be accessed [here]
 ## App Features (cont.)
 
 - Tab 3: Linear Regression
-    - Allows the user to fit linear regression models to the data, selecting which variable to predict and which to use as predictors
+    - Allows the user to fit linear regression models to the data, selecting which variable to model as the outcome and which variables to use as predictors
     - Model coefficients, goodness of fit (adjusted R-Squared) and diagnostic plots are dynamically displayed

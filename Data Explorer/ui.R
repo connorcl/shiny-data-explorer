@@ -46,7 +46,7 @@ shinyUI(navbarPage(
                     selectInput("facet_scatter", "Faceting Variable", 
                                 c("None", names(diamonds)[!sapply(diamonds[1,], 
                                                                   is.numeric)])),
-                    sliderInput("alpha_scatter", "Point Opacity", 0.01, 1, 0.5),
+                    sliderInput("alpha_scatter", "Point Opacity", 0.01, 1, 1),
                     numericInput("size_scatter", "Point Size", 1, 1, 10, 1),
                     selectInput("smooth_scatter", "Smoothing Line", 
                                 c("None", "Regression Line", "Smooth Curve"))
@@ -121,7 +121,7 @@ shinyUI(navbarPage(
                 width = 3,
                 h4(actionLink("regression_help", "Help")),
                 hr(),
-                selectInput("regression_dep_var", "Select Variable to Predict",
+                selectInput("regression_dep_var", "Select Outcome Variable",
                             names(diamonds)[sapply(diamonds[1,], is.numeric)]),
                 uiOutput("predictors")),
             column(
