@@ -1,0 +1,48 @@
+---
+title: "Interactive Data Exploration Using Shiny"
+author: "Connor Claypool"
+date: "31 July 2018"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Presenting Exploratory Analyses
+
+Sharing an exploratory analysis as a series of R commands and their outputs, like below, can give lengthy and untidy results.
+
+```{r, echo = FALSE, message = FALSE}
+library(dplyr)
+```
+
+```{r, comment = ""}
+str(iris)
+```
+
+... and so on.
+
+## Interactive Exploratory Analysis with Shiny
+
+Alternatively, an exploratory analysis can be packaged in an interactive Shiny app. This brings some key advantages:
+
+- Greater flexibility due to interactive options and dynamic outputs
+- Intuitive and easy to understand, even without knowledge of R
+- App format allows for convenient organisation with tabs and menus
+
+## App Features
+
+An example exploratory analysis, packaged as a Shiny app, can be accessed [here]().
+
+- Tab 1: Data Overview
+    - Shows a table of up to 100 observations from the dataset. The user can select how many to display and which variable to order the dataset by.
+- Tab 2: Exploratory Graphs
+    - Allows the user to create a variety of exploratory graphs, including scatter plots, box plots and histograms
+    - Users can select which variables to show on the axes and whether to show further variables using color or faceting, and tune graphical options
+    
+## App Features (cont.)
+
+- Tab 3: Linear Regression
+    - Allows the user to fit linear regression models to the data, selecting which variable to predict and which to use as predictors
+    - Model coefficients, goodness of fit (adjusted R-Squared) and diagnostic plots are dynamically displayed
